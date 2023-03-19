@@ -1,0 +1,4 @@
+export const PARENT_NAVIGATION_HEIGHT = 40
+export const HEADER_HEIGHT = 96
+export const HEADER_HEIGHT_SMALL = 72
+export const HEADER_HEIGHT_MOBILE = 64

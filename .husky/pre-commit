@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+[ -n "$TF_BUILD" ] && exit 0
+npx lint-staged
+
+if [ "$(grep -c "yalc/" package.json)" -ge 1 ];
+then
+  echo "Detected YALC reference inside package.json, please remove before committing."
+  exit 1
+fi

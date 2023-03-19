@@ -1,0 +1,17 @@
+/* eslint-disable storybook/default-exports */
+import { CircleCheckmarkIcon } from 'components/base'
+
+import type { Story } from '@storybook/react/types-6-0'
+import type { ComponentProps } from 'react'
+
+type Props = ComponentProps<typeof CircleCheckmarkIcon>
+
+const Template: Story<Props> = args => <CircleCheckmarkIcon {...args} />
+
+export const CircleCheckmark = Template.bind({})
+CircleCheckmark.args = {
+  color: 'primary',
+  htmlColor: 'red',
+  titleAccess: 'Test title access',
+  viewBox: '0 0 24 24'
+}

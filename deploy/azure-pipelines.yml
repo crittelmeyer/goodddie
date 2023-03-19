@@ -1,0 +1,47 @@
+pr: none
+trigger:
+  branches:
+    include:
+      - main
+
+variables:
+  ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/develop') }}:
+    environment: dev
+  ${{ else }}:
+    environment: prod
+
+stages:
+  - stage: PublishLibrary
+    displayName: Publish Library
+    pool:
+      vmImage: 'ubuntu-latest'
+    jobs:
+      - job: PublishLib
+        displayName: Publish Library
+        variables:
+          YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+        steps:
+          # See https://docs.microsoft.com/en-us/azure/devops/pipelines/scripts/git-commands?view=azure-devops&tabs=yaml
+          - checkout: self
+            persistCredentials: 'true'
+            clean: 'true'
+
+          - task: npmAuthenticate@0
+            displayName: Authenticate NPM feeds
+            inputs:
+              workingFile: .npmrc
+
+          - script: yarn --frozen-lockfile
+            displayName: Install Yarn dependencies
+
+          - script: |
+              git config --global user.email "chrisrittelmeyer@gmail.com"
+              git config --global user.name "Chris Rittelmeyer"
+              git checkout main
+              git pull
+              yarn build
+              yarn release
+              PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[ ",]//g')
+              git push --follow-tags origin main --force
+              yarn publish --no-git-tag-version --new-version $PACKAGE_VERSION
+            displayName: Build and Publish Library

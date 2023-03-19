@@ -1,0 +1,9 @@
+# Ignore everything:
+/*
+
+# Except myapp:
+!/src
+!/.eslintrc.js
+!/.prettierrc.js
+!/.storybook/preview.js
+!/.storybook
