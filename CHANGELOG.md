@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 12.19.0 (2023-03-19)
+
+
+### Features
+
+* **init:** init commit ([c79f558](https://github.com/crittelmeyer/phoenix-frontend-components/commits/c79f5586ff75cdec3b0110772fff724619007631))
+
 ### [12.18.3](https://github.com/crittelmeyer/phoenix-frontend-components/compare/v12.18.2...v12.18.3) (2022-10-05)
 
 ### [12.18.2](https://github.com/crittelmeyer/phoenix-frontend-components/compare/v12.18.1...v12.18.2) (2022-10-05)
