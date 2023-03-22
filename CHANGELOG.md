@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [12.19.1](https://github.com/crittelmeyer/phoenix-frontend-components/compare/v12.19.0...v12.19.1) (2023-03-22)
+
+
+### Bug Fixes
+
+* **palette:** fix palette ([7a1620b](https://github.com/crittelmeyer/phoenix-frontend-components/commits/7a1620b85a922da38887c73f1c288984ca75141a))
+
 ## 12.19.0 (2023-03-19)
 
 
