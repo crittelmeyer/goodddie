@@ -88,9 +88,9 @@ export const getDefaultPalette = (mode: PaletteMode = 'light') => ({
       }
     : {
         primary: {
-          main: colors.green,
-          light: colors.darkGreen,
-          dark: colors.lightGreen
+          main: colors.orange,
+          light: colors.lightOrange,
+          dark: colors.darkOrange
         },
         secondary: {
           main: colors.blue
