@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [12.19.2](https://github.com/untapped-solutions/untapped-frontend-components/compare/v12.19.1...v12.19.2) (2023-06-09)
+
+
+### Features
+
+* **untapped:** change to untapped ([f62652c](https://github.com/untapped-solutions/untapped-frontend-components/commits/f62652cdbf9581e33fd5dd32ea1a6c3c53545e9b))
+
 ### [12.19.1](https://github.com/untapped-solutions/untapped-frontend-components/compare/v12.19.0...v12.19.1) (2023-03-22)
 
 
