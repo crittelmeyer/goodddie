@@ -1,13 +1,13 @@
 import { Link } from 'components/base'
 
-import PhoenixUserError from './PhoenixUserError'
+import UntappedUserError from './UntappedUserError'
 
 import type { Story } from '@storybook/react/types-6-0'
-import type { PhoenixUserErrorProps } from './PhoenixUserError_d'
+import type { UntappedUserErrorProps } from './UntappedUserError_d'
 
-export default { title: 'Base/PhoenixUserError' }
+export default { title: 'Base/UntappedUserError' }
 
-const Template: Story<PhoenixUserErrorProps> = args => <PhoenixUserError {...args} />
+const Template: Story<UntappedUserErrorProps> = args => <UntappedUserError {...args} />
 
 export const Basic = Template.bind({})
 Basic.args = {

@@ -1,12 +1,12 @@
-export enum PhoenixLogoColorMode {
+export enum UntappedLogoColorMode {
   dark,
   light,
   grey,
   primary
 }
 
-export type PhoenixLogoProps = {
-  mode?: PhoenixLogoColorMode
+export type UntappedLogoProps = {
+  mode?: UntappedLogoColorMode
   color?: string
   width?: number
   height?: number

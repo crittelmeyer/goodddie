@@ -1,4 +1,4 @@
-/* eslint-disable @crittelmeyer/import-grouping */
+/* eslint-disable @untapped-solutions/import-grouping */
 import { useState } from 'react'
 import { MinusIcon, PlusIcon } from 'components/base/Icons'
 

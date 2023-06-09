@@ -1,8 +1,8 @@
 {
-  "name": "@crittelmeyer/components",
+  "name": "@untapped-solutions/components",
   "version": "12.19.1",
   "license": "UNLICENSED",
-  "repository": "https://github.com/crittelmeyer/phoenix-frontend-components.git",
+  "repository": "https://github.com/untapped-solutions/untapped-frontend-components.git",
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com/"
@@ -41,8 +41,8 @@
     "@mui/lab": "^5.0.0-alpha.81",
     "@mui/material": "^5.7.0",
     "@mui/styles": "^5.7.0",
-    "@crittelmeyer/eslint-config": "^9.0.2",
-    "@crittelmeyer/eslint-plugin": "^2.0.1",
+    "@untapped-solutions/eslint-config": "^9.0.2",
+    "@untapped-solutions/eslint-plugin": "^2.0.1",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.0",

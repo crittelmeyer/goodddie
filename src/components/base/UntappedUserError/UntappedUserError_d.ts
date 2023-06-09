@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-export interface PhoenixUserErrorClasses {
+export interface UntappedUserErrorClasses {
   root: string
   container: string
   title: string
@@ -8,8 +8,8 @@ export interface PhoenixUserErrorClasses {
   button: string
 }
 
-export type PhoenixUserErrorProps = {
-  classNames?: Partial<PhoenixUserErrorClasses>
+export type UntappedUserErrorProps = {
+  classNames?: Partial<UntappedUserErrorClasses>
   showBackButton: boolean
   subtitle?: string | ReactNode
   title: string

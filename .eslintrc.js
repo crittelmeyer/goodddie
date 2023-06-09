@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@crittelmeyer']
+  extends: ['@untapped-solutions']
 }
