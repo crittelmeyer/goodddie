@@ -113,6 +113,6 @@ export const variants = {
 }
 
 export const typography = {
-  fontFamily: '"HKGrotesk", sans-serif',
+  fontFamily: '"Montserrat", sans-serif',
   ...variants
 }

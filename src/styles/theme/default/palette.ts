@@ -1,10 +1,10 @@
-import { colors as MUIColors } from '@mui/material'
+import { colors as MUIColors, darken, lighten } from '@mui/material'
 
 import type { PaletteMode } from '@mui/material'
 
 const colors = {
   black: '#050505',
-  blue: '#203f59',
+  blue: '#275193',
   clay: '#fae9df',
   darkGreen: '#3b4d2e',
   darkOrange: '#313638',
@@ -13,7 +13,7 @@ const colors = {
   grey: MUIColors.grey,
   kiwi: '#daea78',
   lightSage: '#eaf5eb',
-  orange: '#f06543',
+  orange: '#fc663d',
   lightOrange: '#e0dfd5',
   lightGreen: '#f8f9f2',
   pink: '#daccdb',
@@ -21,7 +21,8 @@ const colors = {
   red: '#ff2825',
   sage: '#ace2af',
   skyBlue: '#b7dde1',
-  stone: '#f4f3f1'
+  stone: '#f4f3f1',
+  teal: '#00ab94'
 }
 
 export const getDefaultPalette = (mode: PaletteMode = 'light') => ({
@@ -29,12 +30,14 @@ export const getDefaultPalette = (mode: PaletteMode = 'light') => ({
   ...(mode === 'light'
     ? {
         primary: {
-          main: colors.orange,
-          light: colors.lightOrange,
-          dark: colors.darkOrange
+          main: colors.blue,
+          light: lighten(colors.blue, 0.6),
+          dark: darken(colors.blue, 0.6)
         },
         secondary: {
-          main: colors.blue
+          main: colors.teal,
+          light: lighten(colors.teal, 0.9),
+          dark: darken(colors.teal, 0.6)
         },
         text: {
           primary: colors.black,

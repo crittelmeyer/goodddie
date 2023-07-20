@@ -1,66 +1,66 @@
 const font = `
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 100;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-Thin'), url('/fonts/HKGrotesk/HKGrotesk-Thin.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-Thin'), url('/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 200;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-ExtraLight'), url('/fonts/HKGrotesk/HKGrotesk-ExtraLight.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-ExtraLight'), url('/fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 300;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-Light'), url('/fonts/HKGrotesk/HKGrotesk-Light.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-Light'), url('/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 400;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-Regular'), url('/fonts/HKGrotesk/HKGrotesk-Regular.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-Regular'), url('/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 500;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-Medium'), url('/fonts/HKGrotesk/HKGrotesk-Medium.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-Medium'), url('/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 700;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-SemiBold'), url('/fonts/HKGrotesk/HKGrotesk-SemiBold.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-SemiBold'), url('/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 800;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-Bold'), url('/fonts/HKGrotesk/HKGrotesk-Bold.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-Bold'), url('/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
-  font-family: 'HKGrotesk';
+  font-family: 'Montserrat';
   font-weight: 900;
   font-style: normal;
-  src: local('HKGrotesk'), local('HKGrotesk-Black'), url('/fonts/HKGrotesk/HKGrotesk-Black.woff') format('woff');
+  src: local('Montserrat'), local('Montserrat-Black'), url('/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
 }
 @font-face {
   font-display: swap;
   font-family: 'Butler';
   font-weight: 200;
   font-style: normal;
-  src: local('Butler'), local('Butler-UltraLight'), url('/fonts/HKGrotesk/Butler-UltraLight.woff') format('woff');
+  src: local('Butler'), local('Butler-UltraLight'), url('/fonts/Montserrat/Butler-UltraLight.woff') format('woff');
 }
 @font-face {
   font-display: swap;
