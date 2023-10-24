@@ -1,8 +1,8 @@
 {
-  "name": "@phoenix-ai/components",
+  "name": "@crittelmeyer/components",
   "version": "12.20.0",
   "license": "UNLICENSED",
-  "repository": "https://github.com/phoenix-ai/goodddie.git",
+  "repository": "https://github.com/crittelmeyer/goodddie.git",
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com/"
