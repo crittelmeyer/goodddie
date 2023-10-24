@@ -1,4 +1,4 @@
-export type UntappedErrorProps = {
+export type PhoenixErrorProps = {
   className?: string
   componentStack?: string
   stack?: string

@@ -1,8 +1,6 @@
-import type ReactGA from 'react-ga'
-
 export type AnalyticsProviderProps = {
   analyticsId?: string
   children?: React.ReactNode
-  event?(args: ReactGA.EventArgs, trackerNames?: ReactGA.TrackerNames): void
-  pageView?(path: string, trackerNames?: ReactGA.TrackerNames, title?: string): void
+  event?(options: any): void
+  pageView?(path: string, title?: string): void
 }

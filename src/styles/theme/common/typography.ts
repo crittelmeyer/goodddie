@@ -1,4 +1,4 @@
-/* eslint-disable @untapped-solutions/no-duplicate-int */
+/* eslint-disable @crittelmeyer/no-duplicate-int */
 
 export const h1 = {
   fontSize: '4.813rem',

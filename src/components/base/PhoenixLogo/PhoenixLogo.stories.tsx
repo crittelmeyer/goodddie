@@ -1,9 +1,9 @@
-import { UntappedLogo, UntappedLogoColorMode } from 'components/base'
+import { PhoenixLogo, PhoenixLogoColorMode } from 'components/base'
 
 import type { Story } from '@storybook/react/types-6-0'
 import type { ComponentProps } from 'react'
 
-type Props = ComponentProps<typeof UntappedLogo>
+type Props = ComponentProps<typeof PhoenixLogo>
 
 const argTypes = {
   className: {
@@ -38,17 +38,17 @@ const argTypes = {
 }
 
 export default {
-  title: 'Base/UntappedLogo',
+  title: 'Base/PhoenixLogo',
   argTypes
 }
 
-const Template: Story<Props> = args => <UntappedLogo {...args} />
+const Template: Story<Props> = args => <PhoenixLogo {...args} />
 
 export const Basic = Template.bind({})
 Basic.args = {
   className: '',
   height: 30,
   color: 'black',
-  mode: UntappedLogoColorMode.dark,
+  mode: PhoenixLogoColorMode.dark,
   width: 120
 }

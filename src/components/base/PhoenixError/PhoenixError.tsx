@@ -2,7 +2,7 @@ import { isEmpty, makeStyles } from 'utils'
 
 import { Typography } from '@mui/material'
 
-import type { UntappedErrorProps } from './UntappedError_d'
+import type { PhoenixErrorProps } from './PhoenixError_d'
 
 const useStyles = makeStyles()(theme => ({
   root: {
@@ -43,14 +43,14 @@ const statusCodes: { [code: number]: string } = {
 
 const DEFAULT_TEXT = 'An unexpected error has occurred'
 
-const UntappedError = ({
+const PhoenixError = ({
   className = '',
   componentStack = '',
   stack = '',
   statusCode,
   text,
   subtext = ''
-}: UntappedErrorProps) => {
+}: PhoenixErrorProps) => {
   const { classes, cx } = useStyles()
 
   const errorText = text || statusCodes[statusCode] || DEFAULT_TEXT
@@ -91,6 +91,6 @@ const UntappedError = ({
   )
 }
 
-UntappedError.displayName = 'UntappedError'
+PhoenixError.displayName = 'PhoenixError'
 
-export default UntappedError
+export default PhoenixError

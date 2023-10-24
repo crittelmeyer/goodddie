@@ -45,6 +45,12 @@ export const snakeCase = (input: string, options: Options = {}) =>
     ...options
   })
 
+export const kebabCase = (input: string, options: Options = {}) =>
+  noCase(input, {
+    delimiter: '-',
+    ...options
+  })
+
 export const capitalizeWord = (word: string) => {
   const firstLetter = word?.charAt(0).toUpperCase()
   const restOfWord = word?.substring(1)

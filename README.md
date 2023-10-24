@@ -1,6 +1,6 @@
 # Getting Started
 
-The Untapped Component Library is a shared library of React components using `MUI` and `tss-react` for out-of-the-box advanced component features and theming/styling capabilities.
+The Phoenix Component Library is a shared library of React components using `MUI` and `tss-react` for out-of-the-box advanced component features and theming/styling capabilities.
 
 ## Available Shortcut Scripts
 
@@ -21,9 +21,9 @@ To enable easy development and testing across repos, the project uses `yalc`.
 
 2. From the root directory of the project you want to test the component library with:
 
-#### `yalc add @untapped-solutions/components --link`
+#### `yalc add @phoenix-ai/components --link`
 
-3. After this, you are linked and should be able to import from @untapped-solutions/components in your test project. To build and push new updates to all linked remote directories:
+3. After this, you are linked and should be able to import from @phoenix-ai/components in your test project. To build and push new updates to all linked remote directories:
 
 #### `yarn build`
 #### `yalc push --private`
@@ -88,17 +88,17 @@ Creates a production build of storybook for publication.
 
 ## Extended Types
 The component library expands on various default MUI types including Typography variants, Button variants, Button colors, and the standard Palette. To use the expanded MUI theme values in your consuming project and avoid Typescript errors, we need to reference the exported ambient modules from the component library by doing the following:
-1. Create a file called `untapped-env.d.ts` in the root of your project directory.
-2. Populate it with this line of code: `/// <reference types="@untapped-solutions/components/dist/styles/theme/expanded" />`
-3. Update the "include" array of `tsconfig.json` with `"untapped-env.d.ts"`
+1. Create a file called `phoenix-ai-env.d.ts` in the root of your project directory.
+2. Populate it with this line of code: `/// <reference types="@phoenix-ai/components/dist/styles/theme/expanded" />`
+3. Update the "include" array of `tsconfig.json` with `"phoenix-ai-env.d.ts"`
 
 
 ## Event Tracking
 
-Besides providing Untapped-themed display components, this project also provides tools for making event tracking easier. Using these tools requires some setup in the consuming project.
+Besides providing Phoenix-themed display components, this project also provides tools for making event tracking easier. Using these tools requires some setup in the consuming project.
 ### Setup Providers
 
-To enable event tracking in a project, you must wrap any components that intend to use the provided functions with two components - one for Google Analytics tracking and one for custom Untapped tracking. Typically, these wrappers are initiated in the root React component (i.e. App.tsx).
+To enable event tracking in a project, you must wrap any components that intend to use the provided functions with two components - one for Google Analytics tracking and one for custom Phoenix tracking. Typically, these wrappers are initiated in the root React component (i.e. App.tsx).
 1. The `AnalyticsProvider` component is needed for Google Analytics, and requires a single prop `analyticsId` which represents the Google Analytics ID.
 2. The `EventTrackingProvider` component accepts 4 props:
   - `trackingServiceUrl` - Required, the URL for the tracking service endpoint.
@@ -109,7 +109,7 @@ To enable event tracking in a project, you must wrap any components that intend 
 _Note_: Although at least one instance of these wrapper components are required before making any tracking calls, you are able to nest multiple instances of these components, useful for overriding parent prop values.
 
 ```jsx
-import { AnalyticsProvider, EventTrackingProvider } from '@untapped-solutions/components'
+import { AnalyticsProvider, EventTrackingProvider } from '@phoenix-ai/components'
 
 // ...
 
@@ -146,7 +146,7 @@ This cascading series of overrides allows for flexible tracking designs.
 
 For example, you may have a root `App` component with a default category specified:
 ```jsx
-import { AnalyticsProvider, EventTrackingProvider } from '@untapped-solutions/components'
+import { AnalyticsProvider, EventTrackingProvider } from '@phoenix-ai/components'
 
 const App = () => (
   <AnalyticsProvider analyticsId="UA-XXXXX-X">
@@ -178,7 +178,7 @@ const Page1 = () => {
 
 But suppose you want all the tracking calls for a collection of pages to share a category that's different from "My App". Rather than specifying the same category value over and over in each of those files, you could create a layout component and wrap it with a `EventTrackingProvider`, overriding the values of the root-level `EventTrackingProvider`:
 ```jsx
-import { EventTrackingProvider } from '@untapped-solutions/components'
+import { EventTrackingProvider } from '@phoenix-ai/components'
 
 const Section = ({ children }) => (
   <EventTrackingProvider initialCategory="My Section" trackingServiceUrl="https://myservice.com/track">
@@ -271,7 +271,7 @@ We have integrated the event tracking functions with some components from our li
 
 The `Button`, `LoadingButton`, and `Link` components all support a `tracking` prop which expects an object specifying an optional `category` field and a required `label` field. For example:
 ```jsx
-import { Button, Link } from '@untapped-solutions/components'
+import { Button, Link } from '@phoenix-ai/components'
 
 const MyComponent = () => (
   <Button tracking={{ label: 'my button' }} /* ... */>{'My Button'}</Button>
@@ -287,7 +287,7 @@ To capture web vitals in a NEXT.js app there is also an exported method `postMet
 Call this method like so:
 
 ```js
-import { postMetrics } from '@untapped-solutions/components'
+import { postMetrics } from '@phoenix-ai/components'
 
 // ...
 postMetrics(

@@ -6,6 +6,7 @@ export type AdditionalValues = {
   orderGuid?: string
   orderItemId?: string
   redirectUrl?: string
+  userId?: string
   status?: string
   trackingNumber?: string
   utmCampaign?: string

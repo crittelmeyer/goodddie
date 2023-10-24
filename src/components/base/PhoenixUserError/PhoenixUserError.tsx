@@ -4,7 +4,7 @@ import { makeStyles } from 'utils'
 
 import { Typography } from '@mui/material'
 
-import type { UntappedUserErrorProps } from './UntappedUserError_d'
+import type { PhoenixUserErrorProps } from './PhoenixUserError_d'
 
 const useStyles = makeStyles({ name: 'ConsignmentsPage' })(theme => ({
   root: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles({ name: 'ConsignmentsPage' })(theme => ({
   }
 }))
 
-const UntappedUserError = ({ classNames, showBackButton, subtitle, title }: UntappedUserErrorProps) => {
+const PhoenixUserError = ({ classNames, showBackButton, subtitle, title }: PhoenixUserErrorProps) => {
   const { classes, cx } = useStyles()
 
   return (
@@ -65,4 +65,4 @@ const UntappedUserError = ({ classNames, showBackButton, subtitle, title }: Unta
   )
 }
 
-export default UntappedUserError
+export default PhoenixUserError

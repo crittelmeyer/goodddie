@@ -1,8 +1,8 @@
 {
-  "name": "@untapped-solutions/components",
+  "name": "@phoenix-ai/components",
   "version": "12.19.4",
   "license": "UNLICENSED",
-  "repository": "https://github.com/untapped-solutions/untapped-frontend-components.git",
+  "repository": "https://github.com/phoenix-ai/goodddie.git",
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com/"
@@ -12,7 +12,7 @@
     "build": "rollup -c",
     "component": "hygen new component",
     "dev:build": "nodemon -e js,jsx,ts,tsx --ignore dist/ -x yarn build",
-    "dev:push": "nodemon --watch dist -x yalc push --private",
+    "dev:push": "nodemon --watch dist -x yalc push --private --sig",
     "dev": "yarn dev:build & yarn dev:push",
     "lint": "eslint src/components src/constant src/styles src/types src/utils --ext=ts,tsx",
     "lint:fix": "eslint src/components src/constant src/styles src/types src/utils --ext=ts,tsx --fix",
@@ -31,18 +31,16 @@
     "dist"
   ],
   "devDependencies": {
-    "@contentful/rich-text-react-renderer": "^15.11.1",
     "@babel/core": "^7.17.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@contentful/rich-text-react-renderer": "^15.11.1",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.2",
     "@mui/lab": "^5.0.0-alpha.81",
     "@mui/material": "^5.7.0",
     "@mui/styles": "^5.7.0",
-    "@untapped-solutions/eslint-config": "^9.0.2",
-    "@untapped-solutions/eslint-plugin": "^2.0.1",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.0",
@@ -62,6 +60,8 @@
     "@types/webpack-env": "^1.17.0",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
+    "@crittelmeyer/eslint-config": "^9.0.2",
+    "@crittelmeyer/eslint-plugin": "^2.0.1",
     "axios": "^0.27.2",
     "babel-loader": "^8.2.5",
     "contentful": "^9.1.28",
@@ -86,7 +86,7 @@
     "react": "^18.1.0",
     "react-device-detect": "^2.1.2",
     "react-dom": "^18.1.0",
-    "react-ga": "^3.3.0",
+    "react-ga4": "^2.1.0",
     "require-from-string": "^2.0.2",
     "rollup": "^2.63.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -111,7 +111,7 @@
     "react": ">=17.0",
     "react-device-detect": ">=2.1.2",
     "react-dom": ">=17.0.2",
-    "react-ga": ">=3.3.0",
+    "react-ga4": "^2.1.0",
     "tss-react": ">=3.6.2"
   },
   "eslintConfig": {
@@ -149,6 +149,5 @@
   },
   "resolutions": {
     "@emotion/utils": "1.1.0"
-  },
-  "dependencies": {}
+  }
 }

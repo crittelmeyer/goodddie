@@ -1,4 +1,4 @@
-import { UntappedLogo, UntappedLogoColorMode } from 'components/base'
+import { PhoenixLogo, PhoenixLogoColorMode } from 'components/base'
 
 import OptionPicker from './OptionPicker'
 
@@ -129,14 +129,14 @@ RenderOptionList.args = {
   subTitle: '',
   mode: 'list',
   options: [
-    { key: '1', value: { mode: UntappedLogoColorMode.grey } },
-    { key: '2', value: { mode: UntappedLogoColorMode.primary } },
-    { key: '3', value: { mode: UntappedLogoColorMode.light }, unavailable: true },
-    { key: '4', value: { mode: UntappedLogoColorMode.primary }, disabled: true }
+    { key: '1', value: { mode: PhoenixLogoColorMode.grey } },
+    { key: '2', value: { mode: PhoenixLogoColorMode.primary } },
+    { key: '3', value: { mode: PhoenixLogoColorMode.light }, unavailable: true },
+    { key: '4', value: { mode: PhoenixLogoColorMode.primary }, disabled: true }
   ],
   renderOption: option => (
     <div style={{ backgroundColor: option.disabled ? 'red' : '' }}>
-      <UntappedLogo mode={option.value.mode} />
+      <PhoenixLogo mode={option.value.mode} />
     </div>
   )
 }

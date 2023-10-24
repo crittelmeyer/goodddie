@@ -4,8 +4,8 @@ import { makeStyles } from 'utils'
 import { Typography } from '@mui/material'
 import Image from 'next/image'
 
-// import { UntappedLogoColorMode } from './UntappedLogo_d'
-import type { UntappedLogoProps } from './UntappedLogo_d'
+// import { PhoenixLogoColorMode } from './PhoenixLogo_d'
+import type { PhoenixLogoProps } from './PhoenixLogo_d'
 
 const useStyles = makeStyles()(theme => ({
   root: {
@@ -27,17 +27,17 @@ const useStyles = makeStyles()(theme => ({
   }
 }))
 
-export const UntappedLogo: React.FC<UntappedLogoProps> = () => {
+export const PhoenixLogo: React.FC<PhoenixLogoProps> = () => {
   const { classes } = useStyles()
   // const { mode, color } = props
   // const theme = useTheme()
   // const logoColors = {
-  //   [UntappedLogoColorMode.dark]: 'black',
-  //   [UntappedLogoColorMode.light]: 'white',
-  //   [UntappedLogoColorMode.grey]: theme.palette.text.secondary,
-  //   [UntappedLogoColorMode.primary]: theme.palette.primary.main
+  //   [PhoenixLogoColorMode.dark]: 'black',
+  //   [PhoenixLogoColorMode.light]: 'white',
+  //   [PhoenixLogoColorMode.grey]: theme.palette.text.secondary,
+  //   [PhoenixLogoColorMode.primary]: theme.palette.primary.main
   // }
-  // const fillColor = color ?? logoColors[mode || UntappedLogoColorMode.dark]
+  // const fillColor = color ?? logoColors[mode || PhoenixLogoColorMode.dark]
 
   // console.log(fillColor)
 
@@ -45,10 +45,10 @@ export const UntappedLogo: React.FC<UntappedLogoProps> = () => {
 
   return (
     <div className={classes.root}>
-      <Image alt="Untapped Logo" height={65} src="https://untapped-assets.s3.amazonaws.com/logo-tree.png" width={65} />
+      <Image alt="Phoenix Logo" height={65} src="https://phoenix-ai-assets.s3.amazonaws.com/logo-tree.png" width={65} />
       <div className={classes.text}>
         <Typography className={classes.topText} color="primary" variant="h6">
-          UNTAPPED
+          Phoenix
         </Typography>
         <Typography className={classes.bottomText} color="primary" variant="h6">
           SOLUTIONS
@@ -58,4 +58,4 @@ export const UntappedLogo: React.FC<UntappedLogoProps> = () => {
   )
 }
 
-export default UntappedLogo
+export default PhoenixLogo
