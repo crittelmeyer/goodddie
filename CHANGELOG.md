@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [12.20.1](https://github.com/crittelmeyer/goodddie/compare/v12.20.0...v12.20.1) (2023-10-24)
+
+
+### Bug Fixes
+
+* **name:** fix name ([a8e2a23](https://github.com/crittelmeyer/goodddie/commits/a8e2a238a561762b6ecce2946158c1e775323f71))
+
 ## [12.20.0](https://github.com/phoenix-ai/goodddie/compare/v12.19.4...v12.20.0) (2023-10-24)
 
 
