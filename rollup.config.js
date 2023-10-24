@@ -1,12 +1,11 @@
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
 import url from '@rollup/plugin-url'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
 import { terser } from 'rollup-plugin-terser'
 import { visualizer } from "rollup-plugin-visualizer";
-
-import typescript from '@rollup/plugin-typescript'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const packageJson = require('./package.json')

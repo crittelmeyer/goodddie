@@ -1,13 +1,13 @@
 /* eslint-disable @crittelmeyer/no-duplicate-int */
+import font from 'styles/theme/common/font'
+
 import { createTheme } from '@mui/material'
 
-import font from '../common/font'
-
-import { getOrangePalette } from './palette'
+import { getMonoPalette } from './palette'
 
 import type { Palette, Theme } from '@mui/material'
 
-export const getOrangeThemeOverrides = (theme: Theme, prefersDarkMode = false, palette: Palette) =>
+export const getMonoThemeOverrides = (theme: Theme, prefersDarkMode = false, palette: Palette) =>
   createTheme(theme, {
     components: {
       MuiCssBaseline: {
@@ -84,9 +84,19 @@ export const getOrangeThemeOverrides = (theme: Theme, prefersDarkMode = false, p
           sizeSmall: {
             padding: theme.spacing(0.5, 2)
           },
-          containedDark: {
+          containedPrimary: {
+            color: theme.palette.common.white,
+
             '&:hover': {
-              backgroundColor: theme.palette.common.black
+              color: theme.palette.common.white
+            }
+          },
+          containedDark: {
+            color: theme.palette.grey[900],
+
+            '&:hover': {
+              backgroundColor: theme.palette.common.black,
+              color: theme.palette.common.white
             }
           },
           outlinedDark: {
@@ -257,5 +267,5 @@ export const getOrangeThemeOverrides = (theme: Theme, prefersDarkMode = false, p
       }
     },
     // eslint-disable-next-line sonarjs/no-all-duplicated-branches
-    palette: palette || getOrangePalette(prefersDarkMode ? 'light' : 'light') // TODO: add 'dark' here when dark mode is ready
+    palette: palette || getMonoPalette(prefersDarkMode ? 'dark' : 'light') // TODO: add 'dark' here when dark mode is ready
   })

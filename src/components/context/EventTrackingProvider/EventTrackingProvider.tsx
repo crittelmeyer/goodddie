@@ -1,4 +1,4 @@
-/* eslint-disable @untapped-solutions/import-grouping */
+/* eslint-disable @crittelmeyer/import-grouping */
 import { createContext, useContext, useState } from 'react'
 import { useAnalytics } from 'components/context/AnalyticsProvider'
 

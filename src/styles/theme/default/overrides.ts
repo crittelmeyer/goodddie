@@ -1,4 +1,4 @@
-/* eslint-disable @untapped-solutions/no-duplicate-int */
+/* eslint-disable @crittelmeyer/no-duplicate-int */
 import font from 'styles/theme/common/font'
 
 import { createTheme } from '@mui/material'
