@@ -9,7 +9,7 @@
     {"type": "perf", "hidden": true},
     {"type": "test", "hidden": true}
   ],
-  "commitUrlFormat": "https://github.com/phoenix-ai/goodddie/commits/{{hash}}",
-  "compareUrlFormat": "https://github.com/phoenix-ai/goodddie/compare/{{previousTag}}...{{currentTag}}",
+  "commitUrlFormat": "https://github.com/crittelmeyer/goodddie/commits/{{hash}}",
+  "compareUrlFormat": "https://github.com/crittelmeyer/goodddie/compare/{{previousTag}}...{{currentTag}}",
   "releaseCommitMessageFormat": "chore(release): {{currentTag}} [skip ci]"
 }
