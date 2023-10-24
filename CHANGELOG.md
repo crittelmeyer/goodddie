@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.20.0](https://github.com/phoenix-ai/goodddie/compare/v12.19.4...v12.20.0) (2023-10-24)
+
+
+### Features
+
+* **stuff:** add new stuff ([3b244d9](https://github.com/phoenix-ai/goodddie/commits/3b244d9dd91800d671aab6caa28e5ae093995045))
+
 ### [12.19.4](https://github.com/phoenix-ai/goodddie/compare/v12.19.3...v12.19.4) (2023-07-20)
 
 
